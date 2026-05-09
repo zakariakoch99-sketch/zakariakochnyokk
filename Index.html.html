@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakria Koch Nyok Amiang | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        
+        .hero-bg { 
+            background: radial-gradient(circle at 20% 30%, #1e3a8a 0%, #0f172a 100%); 
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .photo-frame {
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        .photo-frame::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid #3b82f6;
+            border-radius: 1rem;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .photo-frame:hover::after {
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f1a] text-gray-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter text-white">
+                ZAKRIA<span class="text-blue-500">KOCH</span>
+            </div>
+            <div class="hidden md:flex space-x-10 text-xs uppercase font-bold tracking-[0.2em]">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#expertise" class="hover:text-blue-400 transition">Expertise</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero-bg pt-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left: Bio Content -->
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <div class="mb-6 inline-flex items-center gap-2 py-1 px-4 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-black tracking-widest uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    Starford International University Alumni
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Engineering <br><span class="gradient-text">The Future.</span>
+                </h1>
+                
+                <p class="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
+                    Software Engineer, VSAT Expert, and CCTV Specialist. Based in Juba, I bridge the gap between complex code and critical hardware infrastructure.
+                </p>
+                
+                <!-- Social Media Bar -->
+                <div class="flex justify-center md:justify-start gap-6 text-2xl mb-10">
+                    <a href="#" class="hover:text-blue-400 transition-all transform hover:-translate-y-1"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-sky-500 transition-all transform hover:-translate-y-1"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="hover:text-pink-500 transition-all transform hover:-translate-y-1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="hover:text-blue-600 transition-all transform hover:-translate-y-1"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-purple-500 transition-all transform hover:-translate-y-1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition-all transform hover:-translate-y-1"><i class="fa-brands fa-threads"></i></a>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#expertise" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold transition flex items-center justify-center gap-2">
+                        My Expertise <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Photo Side -->
+            <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                <div class="photo-frame group">
+                    <div class="relative glass rounded-2xl p-3 overflow-hidden w-64 h-80 md:w-80 md:h-[480px]">
+                        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL PHOTO -->
+                        <img src="file:///C:/Users/Zakaria%20Koch%20Nyok/Downloads/556.jpg." 
+                             alt="Zakria Koch Nyok Amiang" 
+                             class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition duration-700">
+                        
+                        <!-- Overlay Label -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass rounded-xl translate-y-12 group-hover:translate-y-0 transition duration-500">
+                            <p class="text-xs font-bold text-blue-400 uppercase tracking-tighter">Current Location</p>
+                            <p class="text-sm font-semibold">Juba, South Sudan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-32 px-6 bg-[#080b14]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black mb-4">Technical Prowess</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Software -->
+                <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition group">
+                    <i class="fa-solid fa-code text-blue-500 text-3xl mb-6"></i>
+                    <h3 class="text-lg font-bold mb-3">Software Engineering</h3>
+                    <p class="text-gray-500 text-sm">Python, SQL, and C++ development with a focus on data-driven solutions.</p>
+                </div>
+
+                <!-- VSAT -->
+                <div class="glass p-8 rounded-3xl hover:border-purple-500/50 transition">
+                    <i class="fa-solid fa-satellite text-purple-500 text-3xl mb-6"></i>
+                    <h3 class="text-lg font-bold mb-3">VSAT Expert</h3>
+                    <p class="text-gray-500 text-sm">Installation and configuration of high-speed satellite communication systems.</p>
+                </div>
+
+                <!-- CCTV -->
+                <div class="glass p-8 rounded-3xl hover:border-emerald-500/50 transition">
+                    <i class="fa-solid fa-shield-halved text-emerald-500 text-3xl mb-6"></i>
+                    <h3 class="text-lg font-bold mb-3">CCTV Specialist</h3>
+                    <p class="text-gray-500 text-sm">Advanced IP camera networking and surveillance architecture setup.</p>
+                </div>
+
+                <!-- Graphics -->
+                <div class="glass p-8 rounded-3xl hover:border-orange-500/50 transition">
+                    <i class="fa-solid fa-pen-nib text-orange-500 text-3xl mb-6"></i>
+                    <h3 class="text-lg font-bold mb-3">Zakria Koch Graphics</h3>
+                    <p class="text-gray-500 text-sm">Professional brand design, logo creation, and visual storytelling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-16 border-t border-white/5 text-center px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-2xl font-bold mb-8">Let's build something exceptional.</h3>
+            <p class="text-gray-500 text-sm mb-4">Zakria Koch Nyok Amiang | Software Engineer & SIU Alumnus</p>
+            <div class="text-[10px] text-gray-700 uppercase tracking-[0.4em]">© 2026 Digital Portfolio</div>
+        </div>
+    </footer>
+
+</body>
+</html>
